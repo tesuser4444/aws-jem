@@ -1,0 +1,25 @@
+# Terraform: providers/módulos descargados (se regeneran con terraform init)
+.terraform/
+
+# State: contiene IDs de cuenta, ARNs y a veces secretos en texto plano
+*.tfstate
+*.tfstate.*
+terraform.tfstate.d/
+
+# Planes guardados y logs de crash
+*.tfplan
+crash.log
+crash.*.log
+
+# Overrides locales
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Variables locales con valores sensibles (si algún día las usas)
+*.auto.tfvars
+secrets.tfvars
+
+# macOS
+.DS_Store
